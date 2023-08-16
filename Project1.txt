@@ -1,0 +1,851 @@
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~
+$ cd Desktop
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop
+$ mkdir Git_Maktabkhooneh
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop
+$ cd Git
+Git_Maktabkhooneh/          GitHub Desktop.lnk          GitHubDesktopSetup-x64.exe
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop
+$ cd Git
+Git_Maktabkhooneh/          GitHub Desktop.lnk          GitHubDesktopSetup-x64.exe
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop
+$ cd Git_Maktabkhooneh/
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh
+$ mkdir Project1
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh
+$ cd Project1
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1
+$ git init
+Initialized empty Git repository in C:/Users/Karimi-PC/Desktop/Git_Maktabkhooneh/Project1/.git/
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ touch main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ vscode main.py
+bash: vscode: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ vs main.py
+bash: vs: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ main.py
+bash: main.py: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ code main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ status
+bash: status: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.py
+
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit 'Main.py that asks your name and greets you'
+error: pathspec 'Main.py that asks your name and greets you' did not match any file(s) known to git
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit Main.py 'main that asks your name and greets you'
+error: pathspec 'Main.py' did not match any file(s) known to git
+error: pathspec 'main that asks your name and greets you' did not match any file(s) known to git
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit -m 'main that asks your name and greets you'
+[master (root-commit) a6d694f] main that asks your name and greets you
+ 1 file changed, 2 insertions(+)
+ create mode 100644 main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log
+commit a6d694f97409e27d85930e9fd3e3c67aac8635db (HEAD -> master)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:40:45 2023 +0430
+
+    main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git differ
+git: 'differ' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff-tree
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff
+diff --git a/main.py b/main.py
+index 5bde978..13006f9 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,2 @@
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)')
+\ No newline at end of file
++print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit -m 'Name Shows Correctly Now !!'
+[master c1d1467] Name Shows Correctly Now !!
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log
+commit c1d1467f41e74cf307c99d11186c272b89f502cb (HEAD -> master)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:45:30 2023 +0430
+
+    Name Shows Correctly Now !!
+
+commit a6d694f97409e27d85930e9fd3e3c67aac8635db
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:40:45 2023 +0430
+
+    main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
++name_greet = Greetings(name , lname)
+\ No newline at end of file
+(END)
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
++name_greet = Greetings(name , lname)
+\ No newline at end of file
+ ESCOD
+diff --git a/main.py b/main.py
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
++name_greet = Greetings(name , lname)
+\ No newline at end of file
+(END)
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
+...skipping...
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
+...skipping...
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
+...skipping...
+diff --git a/main.py b/main.py
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
+...skipping...
+index 13006f9..5ef16b4 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check():
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff
+diff --git a/main.py b/main.py
+index 13006f9..715b433 100644
+--- a/main.py
++++ b/main.py
+@@ -1,2 +1,24 @@
++class Greetings():
++    def __init__(self , name , lname) -> None:
++        self.name = name
++        self.lname = lname
++        if self.revisit_check() == True:
++            self.revisit()
++        else:
++            self.visit()
++
++    def revisit_check(self):
++        return False
++
++    def visit(self):
++        print('Nice to meet you! Welcome to my first git oriented programming!')
++
++    def revisit(self):
++        print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
++
++    def visits_Num(self):
++        return 1
++
+ name = input('Whats your name ?')
+-print('Hi {}! This is my first git oriented code :)'.format(name))
+\ No newline at end of file
++lname = input('Whats your last name ?')
++name_greet = Greetings(name , lname)
+\ No newline at end of file
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git atatus
+git: 'atatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit -m 'first OOP version of greeting // it has a revisit check that is not compelete yet!'
+[master b182a31] first OOP version of greeting // it has a revisit check that is not compelete yet!
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ status
+bash: status: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log
+commit b182a3125a95578f733d07e401dcd465139af6dd (HEAD -> master)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:58:15 2023 +0430
+
+    first OOP version of greeting // it has a revisit check that is not compelete yet!
+
+commit c1d1467f41e74cf307c99d11186c272b89f502cb
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:45:30 2023 +0430
+
+    Name Shows Correctly Now !!
+
+commit a6d694f97409e27d85930e9fd3e3c67aac8635db
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:40:45 2023 +0430
+
+    main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+b182a31 (HEAD -> master) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 Name Shows Correctly Now !!
+a6d694f main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'First OOP'
+fatal: 'First OOP' is not a valid tag name.
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'First_OOP'
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+b182a31 (HEAD -> master, tag: First_OOP) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 Name Shows Correctly Now !!
+a6d694f main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'First_OOP' b182a31
+fatal: tag 'First_OOP' already exists
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'Debugged Base' c1d1467
+fatal: 'Debugged Base' is not a valid tag name.
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'Debugged_Base' c1d1467
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'First_Commit' a6d694f
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ got log --oneline
+bash: got: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+b182a31 (HEAD -> master, tag: First_OOP) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 (tag: Debugged_Base) Name Shows Correctly Now !!
+a6d694f (tag: First_Commit) main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ touch names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ notepad++ name.txt
+bash: notepad++: command not found
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ notepad name.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ notepad names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff
+diff --git a/main.py b/main.py
+index 715b433..64e8d7e 100644
+--- a/main.py
++++ b/main.py
+@@ -8,16 +8,37 @@ class Greetings():
+             self.visit()
+
+     def revisit_check(self):
++        name_check = self.name + ' ' + self.lname
++        with open('names.txt', 'r') as file:
++            for line in file:
++                if name_check in line:
++                    self.num = int(line[-2])
++                    return True
+         return False
+
+     def visit(self):
+         print('Nice to meet you! Welcome to my first git oriented programming!')
++        line = self.name + ' ' + self.lname + ' 1\n'
++        with open('names.txt', 'a') as file:
++            file.write(line)
+
+     def revisit(self):
++        self.num += 1
+         print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
+
++        with open('names.txt', 'r') as file:
++            lines = file.readlines()
++
++        for i in range(len(lines)):
++            if self.name + ' ' + self.lname in lines[i]:
++                lines[i] = self.name + ' ' + self.lname + ' ' + str(self.num) + '\n'
++
++        with open('names.txt', 'w') as file:
++            file.writelines(lines)
++
++
+     def visits_Num(self):
+-        return 1
++        return self.num
+
+ name = input('Whats your name ?')
+ lname = input('Whats your last name ?')
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff names.txt
+diff --git a/names.txt b/names.txt
+index 52c585d..5a579e1 100644
+--- a/names.txt
++++ b/names.txt
+@@ -1,3 +1,4 @@
+ Omid Karimi 4
+ mohammad akhlaghi 1
+ o k 2
++m a 5
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git diff main.py
+diff --git a/main.py b/main.py
+index 715b433..64e8d7e 100644
+--- a/main.py
++++ b/main.py
+@@ -8,16 +8,37 @@ class Greetings():
+             self.visit()
+
+     def revisit_check(self):
++        name_check = self.name + ' ' + self.lname
++        with open('names.txt', 'r') as file:
++            for line in file:
++                if name_check in line:
++                    self.num = int(line[-2])
++                    return True
+         return False
+
+     def visit(self):
+         print('Nice to meet you! Welcome to my first git oriented programming!')
++        line = self.name + ' ' + self.lname + ' 1\n'
++        with open('names.txt', 'a') as file:
++            file.write(line)
+
+     def revisit(self):
++        self.num += 1
+         print("Welcome back {}! You've been here {} Tiems!".format(self.name , self.visits_Num()))
+
++        with open('names.txt', 'r') as file:
++            lines = file.readlines()
++
++        for i in range(len(lines)):
++            if self.name + ' ' + self.lname in lines[i]:
++                lines[i] = self.name + ' ' + self.lname + ' ' + str(self.num) + '\n'
++
++        with open('names.txt', 'w') as file:
++            file.writelines(lines)
++
++
+     def visits_Num(self):
+-        return 1
++        return self.num
+
+ name = input('Whats your name ?')
+ lname = input('Whats your last name ?')
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit 'Data BAse added // now it can check if you have been here or not but for one digit numbers'
+error: pathspec 'Data BAse added // now it can check if you have been here or not but for one digit numbers' did not match any file(s) known to git
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit -m 'Data BAse added // now it can check if you have been here or not but for one digit numbers'
+[master 57d0987] Data BAse added // now it can check if you have been here or not but for one digit numbers
+ 1 file changed, 3 insertions(+)
+ create mode 100644 names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log
+commit 57d09876dd3678622b90fbbd80d1099ef2a5f8e7 (HEAD -> master)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 15:30:59 2023 +0430
+
+    Data BAse added // now it can check if you have been here or not but for one digit numbers
+
+commit b182a3125a95578f733d07e401dcd465139af6dd (tag: First_OOP)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:58:15 2023 +0430
+
+    first OOP version of greeting // it has a revisit check that is not compelete yet!
+
+commit c1d1467f41e74cf307c99d11186c272b89f502cb (tag: Debugged_Base)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:45:30 2023 +0430
+
+    Name Shows Correctly Now !!
+
+commit a6d694f97409e27d85930e9fd3e3c67aac8635db (tag: First_Commit)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:40:45 2023 +0430
+
+    main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+57d0987 (HEAD -> master) Data BAse added // now it can check if you have been here or not but for one digit numbers
+b182a31 (tag: First_OOP) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 (tag: Debugged_Base) Name Shows Correctly Now !!
+a6d694f (tag: First_Commit) main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'DataBase_added'
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+57d0987 (HEAD -> master, tag: DataBase_added) Data BAse added // now it can check if you have been here or not but for one digit numbers
+b182a31 (tag: First_OOP) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 (tag: Debugged_Base) Name Shows Correctly Now !!
+a6d694f (tag: First_Commit) main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ touch .gitignore
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ notepad .gitignore
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+        modified:   names.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add main.py
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add names.txt
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git add .gitignore
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   main.py
+        modified:   names.txt
+
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git commit -m 'ignore file created'
+[master 1c95e6f] ignore file created
+ 3 files changed, 24 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git tag 'Ignore_File'
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log --oneline
+1c95e6f (HEAD -> master, tag: Ignore_File) ignore file created
+57d0987 (tag: DataBase_added) Data BAse added // now it can check if you have been here or not but for one digit numbers
+b182a31 (tag: First_OOP) first OOP version of greeting // it has a revisit check that is not compelete yet!
+c1d1467 (tag: Debugged_Base) Name Shows Correctly Now !!
+a6d694f (tag: First_Commit) main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$ git log
+commit 1c95e6f5f8c03ae09380d126efb6164fe6d3f22e (HEAD -> master, tag: Ignore_File)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 15:34:17 2023 +0430
+
+    ignore file created
+
+commit 57d09876dd3678622b90fbbd80d1099ef2a5f8e7 (tag: DataBase_added)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 15:30:59 2023 +0430
+
+    Data BAse added // now it can check if you have been here or not but for one digit numbers
+
+commit b182a3125a95578f733d07e401dcd465139af6dd (tag: First_OOP)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:58:15 2023 +0430
+
+    first OOP version of greeting // it has a revisit check that is not compelete yet!
+
+commit c1d1467f41e74cf307c99d11186c272b89f502cb (tag: Debugged_Base)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:45:30 2023 +0430
+
+    Name Shows Correctly Now !!
+
+commit a6d694f97409e27d85930e9fd3e3c67aac8635db (tag: First_Commit)
+Author: Omid <omidkarimi54@gmail.com>
+Date:   Sun Aug 13 14:40:45 2023 +0430
+
+    main that asks your name and greets you
+
+Karimi-PC@DESKTOP-BNH9FMC MINGW64 ~/Desktop/Git_Maktabkhooneh/Project1 (master)
+$
