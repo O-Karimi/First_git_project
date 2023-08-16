@@ -1,0 +1,17 @@
+THis file is kind of what I have done and What else I wanna add to the project. But in a brain storm kinda way:
+
+Done deals :
+1. a Greeting code.
+2. Get users First and Family Name.
+3. Identify person who runs the code. If the persson has come back to app Greet in another way.
+4. Save how many times a person has come back to the app.
+
+Bugs :
+1. It  can not comprehend more thaan one digit number for coming back.
+
+Features :
+1. have a base beside name and family name (For same Name and Family names that are not one person)
+2. Giving the option to the user to do some useful things after Greetings
+3. Have a link to all their socials and give them link to their socials
+4. Become a personal assisstant
+5. Something like making a schedule and setting appointments in a calender
